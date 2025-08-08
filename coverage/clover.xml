@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1754687373654" clover="3.2.0">
-  <project timestamp="1754687373654" name="All files">
-    <metrics statements="456" coveredstatements="53" conditionals="173" coveredconditionals="3" methods="99" coveredmethods="20" elements="728" coveredelements="76" complexity="0" loc="456" ncloc="456" packages="11" files="38" classes="38"/>
+<coverage generated="1754687980538" clover="3.2.0">
+  <project timestamp="1754687980538" name="All files">
+    <metrics statements="456" coveredstatements="62" conditionals="173" coveredconditionals="3" methods="99" coveredmethods="20" elements="728" coveredelements="85" complexity="0" loc="456" ncloc="456" packages="11" files="38" classes="38"/>
     <package name="src">
       <metrics statements="21" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="app.ts" path="E:\Software Verification and Testing\backend\src\app.ts">
@@ -510,10 +510,10 @@
       </file>
     </package>
     <package name="src.app.modules.User">
-      <metrics statements="59" coveredstatements="46" conditionals="0" coveredconditionals="0" methods="17" coveredmethods="17"/>
+      <metrics statements="59" coveredstatements="55" conditionals="0" coveredconditionals="0" methods="17" coveredmethods="17"/>
       <file name="user.constant.ts" path="E:\Software Verification and Testing\backend\src\app\modules\User\user.constant.ts">
-        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
       </file>
       <file name="user.controller.ts" path="E:\Software Verification and Testing\backend\src\app\modules\User\user.controller.ts">
         <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
@@ -557,15 +557,15 @@
         <line num="71" count="3" type="stmt"/>
       </file>
       <file name="user.route.ts" path="E:\Software Verification and Testing\backend\src\app\modules\User\user.route.ts">
-        <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
       </file>
       <file name="user.service.ts" path="E:\Software Verification and Testing\backend\src\app\modules\User\user.service.ts">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
