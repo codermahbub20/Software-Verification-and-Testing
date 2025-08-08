@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1754687980538" clover="3.2.0">
-  <project timestamp="1754687980538" name="All files">
-    <metrics statements="456" coveredstatements="62" conditionals="173" coveredconditionals="3" methods="99" coveredmethods="20" elements="728" coveredelements="85" complexity="0" loc="456" ncloc="456" packages="11" files="38" classes="38"/>
+<coverage generated="1754689016905" clover="3.2.0">
+  <project timestamp="1754689016905" name="All files">
+    <metrics statements="456" coveredstatements="65" conditionals="173" coveredconditionals="3" methods="99" coveredmethods="20" elements="728" coveredelements="88" complexity="0" loc="456" ncloc="456" packages="11" files="38" classes="38"/>
     <package name="src">
       <metrics statements="21" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="app.ts" path="E:\Software Verification and Testing\backend\src\app.ts">
@@ -439,7 +439,7 @@
       </file>
     </package>
     <package name="src.app.modules.Project">
-      <metrics statements="56" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="16" coveredmethods="0"/>
+      <metrics statements="56" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="16" coveredmethods="0"/>
       <file name="project.controller.ts" path="E:\Software Verification and Testing\backend\src\app\modules\Project\project.controller.ts">
         <metrics statements="21" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
@@ -465,10 +465,10 @@
         <line num="54" count="0" type="stmt"/>
       </file>
       <file name="project.model.ts" path="E:\Software Verification and Testing\backend\src\app\modules\Project\project.model.ts">
-        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
       </file>
       <file name="project.route.ts" path="E:\Software Verification and Testing\backend\src\app\modules\Project\project.route.ts">
         <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>

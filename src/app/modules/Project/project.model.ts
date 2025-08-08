@@ -1,4 +1,4 @@
-import mongoose, { Schema, Document } from 'mongoose';
+import mongoose, { Schema, Document, Types } from 'mongoose';
 import { TProject } from './project.interface';
 
 const ProjectSchema = new Schema<TProject & Document>({
@@ -24,9 +24,9 @@ const ProjectSchema = new Schema<TProject & Document>({
     required: true,
   },
   clientId: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: Types.ObjectId ,
     ref: 'Client',
-  }, // Reference to Client
+  } , // Reference to Client
 });
 
 export const Project = mongoose.model<TProject & Document>(
