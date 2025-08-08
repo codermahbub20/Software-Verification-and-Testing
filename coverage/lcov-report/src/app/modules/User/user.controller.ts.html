@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/18</span>
+                <span class='fraction'>18/18</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/15</span>
+                <span class='fraction'>15/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -109,24 +109,14 @@
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
 <a name='L46'></a><a href='#L46'>46</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -134,13 +124,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -148,20 +134,34 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Request, RequestHandler, Response } from 'express';
-<span class="cstat-no" title="statement not covered" >import CatchAsync from '../../utils/CatchAsync';</span>
-<span class="cstat-no" title="statement not covered" >import sendResponse from '../../utils/sendResponse';</span>
-<span class="cstat-no" title="statement not covered" >import { HttpStatus } from 'http-status-ts';</span>
-<span class="cstat-no" title="statement not covered" >import { UserServices } from './user.service';</span>
+import CatchAsync from '../../utils/CatchAsync';
+import sendResponse from '../../utils/sendResponse';
+import { HttpStatus } from 'http-status-ts';
+import { UserServices } from './user.service';
 &nbsp;
-const createUser = <span class="cstat-no" title="statement not covered" >CatchAsync(<span class="fstat-no" title="function not covered" >async (r</span>eq: Request, res: Response) =&gt;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" > {</span></span></span>
-  const result = <span class="cstat-no" title="statement not covered" >await UserServices.createUserInToDB(req.body);</span>
-<span class="cstat-no" title="statement not covered" >  sendResponse(res, {</span>
+const createUser = CatchAsync(async (req: Request, res: Response) =&gt; {
+  const result = await UserServices.createUserInToDB(req.body);
+  sendResponse(res, {
     statusCode: HttpStatus.CREATED,
     success: true,
     message: 'User registered successfully',
@@ -169,9 +169,9 @@ const createUser = <span class="cstat-no" title="statement not covered" >CatchAs
   });
 });
 &nbsp;
-const getAllUsers: RequestHandler = <span class="cstat-no" title="statement not covered" >CatchAsync(<span class="fstat-no" title="function not covered" >async (r</span>eq, res) =&gt;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" > {</span></span></span>
-  const result = <span class="cstat-no" title="statement not covered" >await UserServices.getAllUserFromDB();</span>
-<span class="cstat-no" title="statement not covered" >  sendResponse(res, {</span>
+const getAllUsers: RequestHandler = CatchAsync(async (req, res) =&gt; {
+  const result = await UserServices.getAllUserFromDB();
+  sendResponse(res, {
     statusCode: HttpStatus.OK,
     success: true,
     message: 'Users are fetched  successfully',
@@ -179,13 +179,13 @@ const getAllUsers: RequestHandler = <span class="cstat-no" title="statement not 
   });
 });
 &nbsp;
-const blockUserByAdmin: RequestHandler = <span class="cstat-no" title="statement not covered" >CatchAsync(<span class="fstat-no" title="function not covered" >async (r</span>eq, res) =&gt;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" > {</span></span></span>
-  const id = <span class="cstat-no" title="statement not covered" >req.params.userId;</span>
+const blockUserByAdmin: RequestHandler = CatchAsync(async (req, res) =&gt; {
+  const id = req.params.userId;
 &nbsp;
   // Add the client's ID
-<span class="cstat-no" title="statement not covered" >  await UserServices.blockedUserByAdminFromDB(id);</span>
+  await UserServices.blockedUserByAdminFromDB(id);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  sendResponse(res, {</span>
+  sendResponse(res, {
     statusCode: HttpStatus.OK,
     success: true,
     message: 'User Blocked successfully',
@@ -193,7 +193,7 @@ const blockUserByAdmin: RequestHandler = <span class="cstat-no" title="statement
   });
 });
 &nbsp;
-export const <span class="cstat-no" title="statement not covered" >UserController = {</span>
+export const UserController = {
   createUser,
   getAllUsers,
   blockUserByAdmin,
@@ -205,7 +205,7 @@ export const <span class="cstat-no" title="statement not covered" >UserControlle
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-08-08T19:42:11.111Z
+                at 2025-08-08T21:09:33.549Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

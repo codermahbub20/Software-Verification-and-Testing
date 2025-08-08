@@ -1,10 +1,9 @@
 import { Request, Response } from 'express';
-import { UserServices } from '../../../../src/app/modules/User/user.service';
-import { UserController } from '../../../../src/app/modules/User/user.controller';
-
+import { UserServices } from '../../../../app/modules/User/user.service';
+import { UserController } from '../../../../app/modules/User/user.controller';
 
 // Mock the entire UserServices module
-jest.mock('./user.service');
+jest.mock('../../../../app/modules/User/user.service');
 
 const next = jest.fn();
 
@@ -39,15 +38,13 @@ describe('UserController', () => {
       };
 
       mockReq.body = { name: 'John', email: 'john@example.com', password: 'pass', role: 'user' };
-      // Mock createUserInToDB to return userData
       (UserServices.createUserInToDB as jest.Mock).mockResolvedValue(userData);
 
-      await UserController.createUser(mockReq as Request, mockRes as Response,next);
+      await UserController.createUser(mockReq as Request, mockRes as Response, next);
 
       expect(UserServices.createUserInToDB).toHaveBeenCalledWith(mockReq.body);
       expect(statusMock).toHaveBeenCalledWith(201);
       expect(jsonMock).toHaveBeenCalledWith({
-        statusCode: 201,
         success: true,
         message: 'User registered successfully',
         data: userData,
@@ -64,12 +61,11 @@ describe('UserController', () => {
 
       (UserServices.getAllUserFromDB as jest.Mock).mockResolvedValue(users);
 
-      await UserController.getAllUsers(mockReq as Request, mockRes as Response,next);
+      await UserController.getAllUsers(mockReq as Request, mockRes as Response, next);
 
       expect(UserServices.getAllUserFromDB).toHaveBeenCalled();
       expect(statusMock).toHaveBeenCalledWith(200);
       expect(jsonMock).toHaveBeenCalledWith({
-        statusCode: 200,
         success: true,
         message: 'Users are fetched  successfully',
         data: users,
@@ -84,12 +80,11 @@ describe('UserController', () => {
 
       (UserServices.blockedUserByAdminFromDB as jest.Mock).mockResolvedValue({ isBlocked: true });
 
-      await UserController.blockUserByAdmin(mockReq as Request, mockRes as Response,next);
+      await UserController.blockUserByAdmin(mockReq as Request, mockRes as Response, next);
 
       expect(UserServices.blockedUserByAdminFromDB).toHaveBeenCalledWith(userId);
       expect(statusMock).toHaveBeenCalledWith(200);
       expect(jsonMock).toHaveBeenCalledWith({
-        statusCode: 200,
         success: true,
         message: 'User Blocked successfully',
         data: {},

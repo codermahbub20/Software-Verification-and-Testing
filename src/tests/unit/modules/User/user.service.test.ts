@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import { MongoMemoryServer } from 'mongodb-memory-server';
-import { User } from '../../../../src/app/modules/User/user.model';
-import { UserServices } from '../../../../src/app/modules/User/user.service';
+import { User } from '../../../../app/modules/User/user.model';
+import { UserServices } from '../../../../app/modules/User/user.service';
 
 
 const userRole: 'admin' | 'user' = 'user'; 

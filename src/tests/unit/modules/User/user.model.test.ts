@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import { MongoMemoryServer } from 'mongodb-memory-server'; // adjust path
 import bcrypt from 'bcrypt';
-import { User } from '../../../../src/app/modules/User/user.model';
+import { User } from '../../../../app/modules/User/user.model';
 
 jest.setTimeout(60000); // increase timeout for slow CI if needed
 
@@ -47,23 +47,29 @@ describe('User Model Test Suite', () => {
     expect(savedUser.updatedAt).toBeDefined();
   });
 
-  it('should hash password before saving', async () => {
-    const plainPassword = 'secret123';
-    const user = new User({
-      name: 'Jane',
-      email: 'jane@example.com',
-      password: plainPassword,
-    });
-
-    const savedUser = await user.save();
-
-    // Password stored in DB should not be plain text
-    expect(savedUser.password).not.toBe(plainPassword);
-
-    // Use bcrypt to verify password matches hashed password
-    const isMatch = await bcrypt.compare(plainPassword, savedUser.password);
-    expect(isMatch).toBe(true);
+ it('should hash password before saving', async () => {
+  const plainPassword = 'secret123';
+  const user = new User({
+    name: 'Jane',
+    email: 'jane@example.com',
+    password: plainPassword,
   });
+
+  await user.save();
+
+  // Fetch user again from DB including password explicitly
+  const savedUserWithPassword = await User.findById(user._id).select('+password').exec();
+
+  expect(savedUserWithPassword).not.toBeNull();
+
+  // Password stored in DB should not be plain text
+  expect(savedUserWithPassword!.password).not.toBe(plainPassword);
+
+  // Use bcrypt to verify password matches hashed password
+  const isMatch = await bcrypt.compare(plainPassword, savedUserWithPassword!.password);
+  expect(isMatch).toBe(true);
+});
+
 
   it('should clear password field after saving (post save hook)', async () => {
     const user = new User({

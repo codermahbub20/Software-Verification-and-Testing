@@ -12,7 +12,7 @@
   },
   "include": [
     "src",
-    "tests"   // make sure your tests folder is included here
+    "src/tests"   // make sure your tests folder is included here
   ],
   "exclude": [
     "node_modules",
