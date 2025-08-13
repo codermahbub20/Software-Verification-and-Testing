@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1755114655235" clover="3.2.0">
-  <project timestamp="1755114655235" name="All files">
-    <metrics statements="456" coveredstatements="105" conditionals="173" coveredconditionals="9" methods="99" coveredmethods="29" elements="728" coveredelements="143" complexity="0" loc="456" ncloc="456" packages="11" files="38" classes="38"/>
+<coverage generated="1755114939124" clover="3.2.0">
+  <project timestamp="1755114939124" name="All files">
+    <metrics statements="456" coveredstatements="121" conditionals="173" coveredconditionals="11" methods="99" coveredmethods="37" elements="728" coveredelements="169" complexity="0" loc="456" ncloc="456" packages="11" files="38" classes="38"/>
     <package name="src">
       <metrics statements="21" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="app.ts" path="E:\Software Verification and Testing\backend\src\app.ts">
@@ -316,7 +316,7 @@
       </file>
     </package>
     <package name="src.app.modules.Client">
-      <metrics statements="50" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="16" coveredmethods="0"/>
+      <metrics statements="50" coveredstatements="19" conditionals="2" coveredconditionals="2" methods="16" coveredmethods="8"/>
       <file name="client.controller.ts" path="E:\Software Verification and Testing\backend\src\app\modules\Client\client.controller.ts">
         <metrics statements="21" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="0"/>
         <line num="1" count="0" type="stmt"/>
@@ -343,9 +343,9 @@
       </file>
       <file name="client.model.ts" path="E:\Software Verification and Testing\backend\src\app\modules\Client\client.model.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="29" count="2" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
       </file>
       <file name="client.route.ts" path="E:\Software Verification and Testing\backend\src\app\modules\Client\client.route.ts">
         <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -361,23 +361,23 @@
         <line num="23" count="0" type="stmt"/>
       </file>
       <file name="client.service.ts" path="E:\Software Verification and Testing\backend\src\app\modules\Client\client.service.ts">
-        <metrics statements="16" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="8" coveredmethods="0"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
+        <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.app.modules.Logs">
