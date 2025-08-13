@@ -23,6 +23,10 @@ const ProjectSchema = new Schema<TProject & Document>({
     enum: ['Ongoing', 'Completed', 'Pending'],
     required: true,
   },
+  name: {
+    type: String,
+    required: false, // Optional field for project name
+  },
   clientId: {
     type: Types.ObjectId ,
     ref: 'Client',

@@ -5,4 +5,7 @@ export interface TProject {
   deadline: Date;
   status: 'Ongoing' | 'Completed' | 'Pending';
   clientId?: string;
+  name?: string; // Optional field for project name
+  description?: string;
+  id?:string // Optional field for project description
 }
